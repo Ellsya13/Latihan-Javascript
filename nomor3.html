@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="ip()">Input Data</button>
+    <button onclick="colors()">Change Color</button>
+    <button onclick="undo()">Undo Color</button>
+    <p id="demo"></p>
+    
+    <script>
+        function ip(){
+            var Nama = prompt("Masukan Nama:", "");
+            var NIM = prompt("Masukan Nim:", "");
+
+            //untuk mata kuliah pertama
+            function mk1(){
+                var nilai1;
+                var mk1 = prompt("Masukan Nilai Alpro (3sks):", "");
+                if((mk1 >= 85 && mk1 <=100) || mk1 == "A"){
+                    nilai1 = 4.0;
+                } else if((mk1 >= 80  && mk1 <=84.99) || mk1 == "A-"){
+                    nilai1 = 3.7;
+                } else if((mk1 >= 75  && mk1 <=79.99) || mk1 == "B+"){
+                    nilai1 = 3.3;
+                } else if((mk1 >= 70  && mk1 <=74.99) || mk1 == "B"){
+                    nilai1 = 3.0;
+                } else if((mk1 >= 65  && mk1 <=69.99) || mk1 == "B-"){
+                    nilai1 = 2.7;
+                } else if((mk1 >= 60  && mk1 <=64.99) || mk1 == "C+"){
+                    nilai1 = 2.3;
+                } else if((mk1 >= 55  && mk1 <=59.99) || mk1 == "C"){
+                    nilai1 = 2.0;
+                } else if((mk1 >= 45  && mk1 <=54.99) || mk1 == "D"){
+                    nilai1 = 1.0;
+                } else if((mk1 >= 0  && mk1 <=44.99) || mk1 == "E"){
+                    nilai1 = 0;
+                } else{
+                    nilai1 = 0;
+                }
+                return nilai1;
+            }
+
+            //untuk mata kuliah kedua
+            function mk2(){
+                var nilai2;
+                var mk2 = prompt("Masukan Nilai DPBO (3sks):", "");
+                if((mk2 >= 85 && mk2 <=100) || mk2 == "A"){
+                    nilai2 = 4.0;
+                } else if((mk2 >= 80  && mk2 <=84.99) || mk2 == "A-"){
+                    nilai2 = 3.7;
+                } else if((mk2 >= 75  && mk2 <=79.99) || mk2 == "B+"){
+                    nilai2 = 3.3;
+                } else if((mk2 >= 70  && mk2 <=74.99) || mk2 == "B"){
+                    nilai2 = 3.0;
+                } else if((mk2 >= 65  && mk2 <=69.99) || mk2 == "B-"){
+                    nilai2 = 2.7;
+                } else if((mk2 >= 60  && mk2 <=64.99) || mk2 == "C+"){
+                    nilai2 = 2.3;
+                } else if((mk2 >= 55  && mk2 <=59.99) || mk2 == "C"){
+                    nilai2 = 2.0;
+                } else if((mk2 >= 45  && mk2 <=54.99) || mk2 == "D"){
+                    nilai2 = 1.0;
+                } else if((mk2 >= 0  && mk2 <=44.99) || mk2 == "E"){
+                    nilai2 = 0;
+                } else{
+                    nilai2 = 0;
+                }
+                return nilai2;
+            }
+
+            //untuk mata kuliah ke tiga
+            function mk3(){
+                var nilai3;
+                var mk3 = prompt("Masukan Nilai Statistika (3sks):", "");
+                if((mk3 >= 85 && mk3 <=100) || mk3 == "A"){
+                    nilai3 = 4.0;
+                } else if((mk3 >= 80  && mk3 <=84.99) || mk3 == "A-"){
+                    nilai3 = 3.7;
+                } else if((mk3 >= 75  && mk3 <=79.99) || mk3 == "B+"){
+                    nilai3 = 3.3;
+                } else if((mk3 >= 70  && mk3 <=74.99) || mk3 == "B"){
+                    nilai3 = 3.0;
+                } else if((mk3 >= 65  && mk3 <=69.99) || mk3 == "B-"){
+                    nilai3 = 2.7;
+                } else if((mk3 >= 60  && mk3 <=64.99) || mk3 == "C+"){
+                    nilai3 = 2.3;
+                } else if((mk3 >= 55  && mk3 <=59.99) || mk3 == "C"){
+                    nilai3 = 2.0;
+                } else if((mk3 >= 45  && mk3 <=54.99) || mk3 == "D"){
+                    nilai3 = 1.0;
+                } else if((mk3 >= 0  && mk3 <=44.99) || mk3 == "E"){
+                    nilai3 = 0;
+                } else{
+                    nilai3 = 0;
+                }
+                return nilai3;
+            }
+            
+            //untuk mata kuliah ke empat
+            function mk4(){
+                var nilai4;
+                var mk4 = prompt("Masukan Nilai Desweb (3sks):", "");
+                if((mk4 >= 85 && mk4 <=100) || mk4 == "A"){
+                    nilai4 = 4.0;
+                } else if((mk4 >= 80  && mk4 <=84.99) || mk4 == "A-"){
+                    nilai4 = 3.7;
+                } else if((mk4 >= 75  && mk4 <=79.99) || mk4 == "B+"){
+                    nilai4 = 3.3;
+                } else if((mk4 >= 70  && mk4 <=74.99) || mk4 == "B"){
+                    nilai4 = 3.0;
+                } else if((mk4 >= 65  && mk4 <=69.99) || mk4 == "B-"){
+                    nilai4 = 2.7;
+                } else if((mk4 >= 60  && mk4 <=64.99) || mk4 == "C+"){
+                    nilai4 = 2.3;
+                } else if((mk4 >= 55  && mk4 <=59.99) || mk4 == "C"){
+                    nilai4 = 2.0;
+                } else if((mk4 >= 45  && mk4 <=54.99) || mk4 == "D"){
+                    nilai4 = 1.0;
+                } else if((mk4 >= 0  && mk4 <=44.99) || mk4 == "E"){
+                    nilai4 = 0;
+                } else{
+                    nilai4 = 0;
+                }
+                return nilai4;
+            }
+
+            //untuk mata kuliah ke lima
+            function mk5(){
+                var nilai5;
+                var mk5 = prompt("Masukan Nilai RPL (3sks):", ""); 
+                if((mk5 >= 85 && mk5 <=100) || mk5 == "A"){
+                    nilai5 = 4.0;
+                } else if((mk5 >= 80  && mk5 <=84.99) || mk5 == "A-"){
+                    nilai5 = 3.7;
+                } else if((mk5 >= 75  && mk5 <=79.99) || mk5 == "B+"){
+                    nilai5 = 3.3;
+                } else if((mk5 >= 70  && mk5 <=74.99) || mk5 == "B"){
+                    nilai5 = 3.0;
+                } else if((mk5 >= 65  && mk5 <=69.99) || mk5 == "B-"){
+                    nilai5 = 2.7;
+                } else if((mk5 >= 60  && mk5 <=64.99) || mk5 == "C+"){
+                    nilai5 = 2.3;
+                } else if((mk5 >= 55  && mk5 <=59.99) || mk5 == "C"){
+                    nilai5 = 2.0;
+                } else if((mk5 >= 45  && mk5 <=54.99) || mk5 == "D"){
+                    nilai5 = 1.0;
+                } else if((mk5 >= 0  && mk5 <=44.99) || mk5 == "E"){
+                    nilai5 = 0;
+                } else{
+                    nilai5 = 0;
+                }
+                return nilai5;
+            }
+
+            // Diperoleh dari: (jumlah(sks * index nilai)) / jumlah sks
+            var IP = ( (3*mk1()) + (3*mk2()) + (3*mk3()) + (3*mk4()) + (3*mk5()) )/15; 
+            
+            
+            document.getElementById("demo").innerHTML = "Nama mahasiswa " + Nama + " dengan NIM " + NIM + " memperoleh IP " + IP;
+        }
+
+        function colors() {
+            var color = prompt("Enter a color");
+            document.bgColor = color
+        }
+
+        function undo(){
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>

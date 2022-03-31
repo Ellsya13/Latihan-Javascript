@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>Tugas design dan pemrograman web</title>
+ </head>
+ <body>
+ 
+   <p id="jam"></p>
+ 
+   <script>
+     var jam = prompt("Masukan pukul berapa:", );
+    //  jika inputannya Jam 6 – 10, script akan menampilkan salam Selamat Pagi
+     if(jam == 6 || jam == 7 || jam == 8 || jam == 9 || jam == 10){
+       document.write("<h2>Selamat Pagi! waktu telah menunjukan pukul " + jam + ".00 WIB</p" );
+
+
+    //  jika inputannya Jam 11 – 14, script akan menampilkan salam Selamat siang
+     }else if(jam == 11 || jam == 12 ||jam == 13 || jam == 14 ){
+        document.write("<h2>Selamat Siang! waktu telah menunjukan pukul " + jam + ".00 WIB</p" );
+
+
+    //  jika inputannya Jam 15 – 117, script akan menampilkan salam Selamat sore
+     }else if(jam == 15 || jam == 16 || jam == 17){
+        document.write("<h2>Selamat Sore! waktu telah menunjukan pukul " + jam + ".00 WIB</p" );
+
+
+    //  jika inputannya Jam 18 – 24, script akan menampilkan salam Selamat malam
+     }else if(jam == 18 || jam == 19 || jam == 20 || jam == 21 || jam == 22 || jam == jam == 23 || jam == 24){
+        document.write("<h2>Selamat Malam! waktu telah menunjukan pukul " + jam + ".00 WIB</p" );
+
+
+    //  jika inputannya Jam 1 – 5, script akan menampilkan salam Selamat tidur
+     }else{
+        document.write("<h2>Selamat Tidur! waktu telah menunjukan pukul " + jam + ".00 WIB</p" );
+     }
+   </script>
+ </body>
+ </html>
